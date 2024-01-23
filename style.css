@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0.5rem;
+    background-color: rgb(25,25,25,255);
+}
+
+.content {
+    padding: 5rem 15rem;
+}
+
+.header {
+    width: 100%;
+    height: 30vh;
+    background-image: url("./header.gif");
+    background-size: cover;
+    background-position-y: 52%;
+}
+
+.header-img {
+    display: block;
+    object-fit: cover;
+}
+
+.title-img::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 0;
+    left: 9rem;
+    transform: translate(-50%, 50%);
+} 
+
+.grid-main {
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 4rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.img-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.checklist-container {
+    background-color: (25,25,25,255);
+}
+
+h1 {
+    font-size: 5rem;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.courses {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.courses li {
+    border-bottom: 1px solid rgba(53,53,53,255);
+}
+
+.courses li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+.checklist-day {
+    /* background-color: rgb(237,243,236) */
+    background-color: rgb(34,43,38,255);
+    opacity: 0.8;
+    padding: 0.5rem;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side {
+    grid-column: 1;
+    grid-row: span 3;
+}
+
+.side-img {
+    width: 100%;
+    height: 700px;
+    background-image: url("/side.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-bottom: 4rem;
+}
+
+.courses {
+    grid-row: span 2;
+    background-color: transparent;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.one {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 2;
+}
+
+.img-empty {
+    grid-column: 3;
+    grid-row: 3;
+    width: 100%;
+    height: 25rem;
+    background-image: url("./rain.gif");
+    background-size: cover;
+}
+
+.todo-list {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 3fr;
+}
+
+h2 {
+    grid-column: span 2;
+    padding: 1rem;
+    background: rgba(36,61,48,255);
+    color: rgba(82,158,114,255);
+}
+
+.list {
+    grid-row: 2;
+    grid-column: 1;
+    height: 400px;
+    background-color: green;
+}
+
+.calender {
+    grid-row: span 3;
+    grid-column: 2;
+    width: 100%;
+    height: 500px;
+    background-color: greenyellow;
+}
